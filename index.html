@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mq.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+          emailjs.init("F8SPTNHN1SMBr8Iih");
+        })();
+      </script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" style="color: white;">Mukhesh.</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about" style="color: white;">About</a></li>
+                <li><a href="#skills" style="color: white;">Skills</a></li>
+                <li><a href="#projects"style="color: white;">Projects</a></li>
+                <li><a href="#contact"style="color: white;">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mukheshkumar</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="11.jpg" alt="Mukheshkumar Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mukheshkumar</h1>
+            <p class="section__text__p2">Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('Resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin-logo-24 (1).png" alt="My LinkedIn Profile" class="icon" onclick="window.location.href='https://www.linkedin.com/in/mukheshkumar-reddy-singamareddy-022551253/'">
+                <img src="./assets/github-logo-24.png" alt="My GitHub Profile" class="icon" onclick="window.location.href='https://github.com/Mukheshkumar25'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="abc.png" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Tech in Computer Science Engineering<br>SRMUAP, 2022 - 2026</p>
+                        <p>Intermediate<br>Srichaithanya Junior College</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am currently pursuing my B.Tech in Computer Science Engineering at SRM UNIVERSITY AP with an expected graduation in 2026. Previously, I completed my education at Srichaithanya from sixth to Intermediate.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#skills'">
+    </section>
+    <section id="skills">
+        <p class="section__text__p1" style="color: black;">What I Know</p>
+        <h1 class="title" style="color: black;">Skills</h1>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="python.png" alt="Python Icon" class="skill-icon">
+                <h3>Python</h3>
+            </div>
+            <div class="skill">
+                <img src="c.jpeg" alt="C Icon" class="skill-icon">
+                <h3>C</h3>
+            </div>
+            <div class="skill">
+                <img src="html.jpg" alt="HTML Icon" class="skill-icon">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill">
+                <img src="css.png" alt="CSS Icon" class="skill-icon">
+                <h3>CSS</h3>
+            </div>
+            <div class="skill">
+                <img src="js.png" alt="JavaScript Icon" class="skill-icon">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill">
+                <img src="react-icon-2048x2048-o8k3ymqa.png" alt="React Icon" class="skill-icon">
+                <h3>React</h3>
+            </div>
+            <div class="skill">
+                <img src="./assets/github.png" alt="Git Icon" class="skill-icon">
+                <h3>Git</h3>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="Designer.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Employee Management System using OOP in C++</h2>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="budget.jpg" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Budget Management Application using React and Python</h2>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <form action="#Contact">
+            <div class="fields">
+              <div class="field name">
+                <input type="text" id="fromName" placeholder="Name" required autocomplete="off">
+              </div>
+              <div class="field email">
+                <input type="email" id="emailSender" placeholder="Email" required autocomplete="off">
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" id="subjectSender" placeholder="Subject" required autocomplete="off">
+            </div>
+            <div class="field textarea">
+              <textarea cols="30" rows="10" id="message" placeholder="Message" required autocomplete="off"></textarea>
+            </div>
+            <div class="button">
+              <button onclick='sendMail()' type="submit">Send Message</button>
+            </div>
+          </form>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links1">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Mukheshkumar. All Rights Reserved.</p>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/envelope-regular-24 (1).png" alt="Email Icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:mukheshkumarreddy@gmail.com" style="color: white;">mukheshkumarreddy@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin-logo-24 (1).png" alt="LinkedIn Icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/mukheshkumar-reddy-singamareddy-022551253/" style="color: white;">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="phone.png" alt="Mobile Icon" class="icon contact-icon">
+                <p style="color: white;">9642878284</p>
+            </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
