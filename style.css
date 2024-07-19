@@ -10,7 +10,7 @@
 html,body{
   height: 100%;
   scroll-behavior: smooth;
-  background: url(6.jpg) no-repeat center;
+  background: url(background.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
